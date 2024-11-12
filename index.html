@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del Dom</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body">
+    <section id="cont-general">
+        <div class="left">
+            <h2>INTERACIONES</h2>
+            <button onclick="circulo()">CIRCULO</button>
+            <button onclick="rombo()">ROMBO</button>
+            <button onclick="fondoColor()">FONDO COLOR</button>
+            <button onclick="imagen()">FONDO IMAGEN</button>
+            <button onclick="arriba()">TOP</button>
+            <button onclick="izquierda()">LEFT</button>
+            <button onclick="abajo()">BOTTOM</button>
+            <button onclick="derecha()">RIGTH</button>
+            <button onclick="diagonal()">DIAGONAL</button>
+            <button onclick="animacion()">ANIMATION</button>
+            <button onclick="fondoDegradado()">FONDO DEGRADADO</button>
+            <button onclick="estrella()">ESTRELLA</button>
+            <button onclick="panelLateral()">PANEL LATERAL</button>
+            <button onclick="panelSuperior()">PANEL SUPERIOR</button>
+        </div>
+        <div class="right">
+            <h2 id="titulo">FIGURA</h2>
+            <div id="figura"></div>
+        </div>
+        <!-- ------------------panel lateral----------------- -->
+        <div id="panel-lateral">
+            <div class="fila">
+                <h3 class="texto-menu">Menú</h3>
+                <button class="boton-menu" onclick="panelLateral()">X</button>
+            </div>
+            <ul class="texto">
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+            </ul>
+            
+        </div>
+        <!-- ------------------panel superior -->
+        <div id="panel-superior">
+            <div class="fila">
+                <h3 class="text-video">Introducción a JavaScript</h3>
+                <button onclick="panelSuperior()">X</button>
+            </div>
+            <div class="video">
+                <iframe width="85%" height="60%" src="https://www.youtube.com/embed/s02MCr_tjlM?si=6TGQjwvmxErCC2zu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js">
+
+    </script>
+</body>
+</html>
